@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GV_InfoClassActivity">
+
+    <ImageView
+        android:id="@+id/img_ThongTinKhoaHoc"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_ThongTinKhoaHoc"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="15dp"
+        android:layout_marginStart="@dimen/cardview_default_radius"
+        android:layout_marginTop="@dimen/cardview_default_radius"
+        android:layout_marginEnd="@dimen/cardview_default_radius"
+        android:layout_marginBottom="@dimen/cardview_default_radius"
+        android:text="Chi Tiết Lớp Học"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtV0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_ThongTinKhoaHoc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên Giảng Viên:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_tenGiangVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_ThongTinKhoaHoc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/txtV7"
+        android:text="Tên Giảng Viên"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV0"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:text="Tên Lớp Học:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_nameClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tenGiangVien"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/txtV1"
+        android:text="Tên Lớp Học"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Tên Môn Học:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_tenMonHoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_nameClass"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@+id/txtV1"
+        android:text="Tên Môn Học"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Phòng:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_Phong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tenMonHoc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/txtV3"
+        android:text="Phòng"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Số Sinh Viên Của Lớp:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_diemQuaTrinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_Phong"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+
+        android:layout_toEndOf="@+id/txtV4"
+        android:text="0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtV5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Số Lần Đã Tạo Điểm Danh:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_soBuoiDiemDanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_diemQuaTrinh"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/txtV5"
+        android:text="0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_diemQuaTrinh"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/txt_soBuoiDiemDanh"
+        android:text="Lần"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtV6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Ngày Bắt Đầu:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_ngayBatDau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_soBuoiDiemDanh"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/txtV6"
+        android:text="00/00/0000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtV7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtV6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Ngày Kết Thúc:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_ngayKetThuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_ngayBatDau"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_toEndOf="@+id/txtV7"
+        android:text="00/00/0000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_diemDanh"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_ngayKetThuc"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/drawable_bg"
+        android:text="Điểm Danh"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_ngayKetThuc"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/drawable_bg"
+        android:layout_toEndOf="@id/btn_diemDanh"
+        android:text="Chi Tiết"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </Button>
+</RelativeLayout>
+
+
+
