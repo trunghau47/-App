@@ -49,76 +49,13 @@
                         android:textStyle="bold"></TextView>
                 </RelativeLayout>
 
-                <RelativeLayout
+                <ListView
+                    android:id="@+id/listviewClass"
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
-                    android:id="@+id/idClass">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_margin="20dp"
-                        android:background="@drawable/categories_car_background">
-
-                        <TextView
-                            android:id="@+id/txtnameClass"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="15dp"
-                            android:text="Tên lớp học"
-                            android:textSize="30sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@+id/txtnameClass"
-                            android:layout_alignParentEnd="true"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="200dp"
-                            android:layout_marginBottom="17dp"
-                            android:padding="15dp"
-                            android:text="Giảng viên"
-                            android:textSize="20sp" />
-
-                        <Button
-                            android:id="@+id/btnclassDetails"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:layout_alignParentBottom="true"
-                            android:background="#00000000"
-                            android:padding="20dp"></Button>
-                    </RelativeLayout>
-                </RelativeLayout>
-
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="150dp"-->
-<!--                    android:layout_margin="20dp"-->
-<!--                    android:layout_marginLeft="20dp"-->
-<!--                    android:background="@drawable/categories_restaurant_background">-->
-
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_alignParentLeft="true"-->
-<!--                        android:padding="15dp"-->
-<!--                        android:text="Hello"-->
-<!--                        android:textColor="@color/whiteTextColor"-->
-<!--                        android:textSize="30sp" />-->
-
-<!--                    <Button-->
-<!--                        android:layout_width="match_parent"-->
-<!--                        android:layout_height="150dp"-->
-<!--                        android:layout_alignParentBottom="true"-->
-<!--                        android:background="#00000000"-->
-<!--                        android:padding="20dp"></Button>-->
-
-<!--                </RelativeLayout>-->
+                    android:layout_height="609dp" />
             </LinearLayout>
         </ScrollView>
     </FrameLayout>
-
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -136,15 +73,167 @@
             android:background="@android:color/transparent"
             app:menu="@menu/bottom_navi_menu_add" />
     </com.google.android.material.bottomappbar.BottomAppBar>
-
-<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
-<!--        android:id="@+id/btnShowBottom"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginRight="20dp"-->
-<!--        android:backgroundTint="@color/white"-->
-<!--        android:onClick="openBottomSheet"-->
-<!--        android:src="@drawable/ic_add"-->
-<!--        app:layout_anchor="@id/bottomAppBar"-->
-<!--        app:maxImageSize="50dp" />-->
+    <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--        android:id="@+id/btnShowBottom"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginRight="20dp"-->
+    <!--        android:backgroundTint="@color/white"-->
+    <!--        android:onClick="openBottomSheet"-->
+    <!--        android:src="@drawable/ic_add"-->
+    <!--        app:layout_anchor="@id/bottomAppBar"-->
+    <!--        app:maxImageSize="50dp" />-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".ClassActivity">-->
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/frame_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <ScrollView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <LinearLayout-->
+<!--                android:id="@+id/line1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="?actionBarSize">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentRight="true"-->
+<!--                        android:padding="15dp"-->
+<!--                        android:src="@drawable/general_search_icon"></ImageView>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:fontFamily="serif"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:text="Lớp Học"-->
+<!--                        android:textAllCaps="true"-->
+<!--                        android:textSize="25sp"-->
+<!--                        android:textStyle="bold"></TextView>-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="190dp"-->
+<!--                    android:id="@+id/idClass">-->
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="150dp"-->
+<!--                        android:layout_margin="20dp"-->
+<!--                        android:background="@drawable/categories_car_background">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/txtClassName"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:padding="15dp"-->
+<!--                            android:text="Tên lớp học"-->
+<!--                            android:textSize="30sp" />-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/idGV"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_below="@+id/txtClassName"-->
+<!--                            android:layout_alignParentEnd="true"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:layout_marginTop="6dp"-->
+<!--                            android:layout_marginEnd="200dp"-->
+<!--                            android:layout_marginBottom="17dp"-->
+<!--                            android:padding="15dp"-->
+<!--                            android:text="Giảng viên"-->
+<!--                            android:textSize="20sp" />-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btnclassDetails"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="150dp"-->
+<!--                            android:layout_alignParentBottom="true"-->
+<!--                            android:background="#00000000"-->
+<!--                            android:padding="20dp"></Button>-->
+<!--                    </RelativeLayout>-->
+<!--                </RelativeLayout>-->
+
+<!--&lt;!&ndash;                <RelativeLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="150dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_margin="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginLeft="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@drawable/categories_restaurant_background">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_alignParentLeft="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:padding="15dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:text="Hello"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textColor="@color/whiteTextColor"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:textSize="30sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_height="150dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:layout_alignParentBottom="true"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:background="#00000000"&ndash;&gt;-->
+<!--&lt;!&ndash;                        android:padding="20dp"></Button>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                </RelativeLayout>&ndash;&gt;-->
+<!--            </LinearLayout>-->
+<!--        </ScrollView>-->
+<!--    </FrameLayout>-->
+
+
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@+id/bottomAppBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:backgroundTint="#17558C"-->
+<!--        app:fabCradleMargin="10dp"-->
+<!--        app:fabCradleRoundedCornerRadius="50dp">-->
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottomNavigationView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            app:menu="@menu/bottom_navi_menu_add" />-->
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
+
+<!--&lt;!&ndash;    <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/btnShowBottom"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginRight="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:backgroundTint="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:onClick="openBottomSheet"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:src="@drawable/ic_add"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_anchor="@id/bottomAppBar"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:maxImageSize="50dp" />&ndash;&gt;-->
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

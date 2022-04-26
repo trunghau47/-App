@@ -9,11 +9,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.appdiemdanh.data.DBHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 public class LoginActivity extends AppCompatActivity {
 
+    DBHelper database;
     TabLayout tabLayout;
     ViewPager viewPager;
     FloatingActionButton face,google,hutech;
@@ -26,7 +28,8 @@ public class LoginActivity extends AppCompatActivity {
         tabLayout = findViewById(R.id.tab_layout);
         viewPager = findViewById(R.id.view_paper);
 
-
+        //database.QueryData("INSERT INTO TaiKhoan VALUES('admin','admin', '0' )");
+        //database.QueryData("INSERT INTO TaiKhoan VALUES('user','user', '1' )");
 
         tabLayout.addTab(tabLayout.newTab().setText("Đăng Nhập"));
         tabLayout.addTab(tabLayout.newTab().setText("Quên Mật Khẩu"));

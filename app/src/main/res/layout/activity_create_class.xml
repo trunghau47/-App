@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="30dp"
         android:text="Chọn"
-        app:layout_constraintBottom_toTopOf="@+id/Diem"
+        app:layout_constraintBottom_toTopOf="@+id/Lop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/NgayKetThuc"
         app:layout_constraintTop_toBottomOf="@+id/NgayBatDau" />
@@ -118,12 +118,12 @@
         app:layout_constraintWidth_percent=".5" />
 
     <EditText
-        android:id="@+id/Diem"
+        android:id="@+id/Lop"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/drawable_border"
         android:drawablePadding="10dp"
-        android:hint="Số % Điểm Quá Trình"
+        android:hint="Lớp"
 
         android:minHeight="48dp"
         android:paddingTop="10dp"
@@ -153,7 +153,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias=".5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Diem"
+        app:layout_constraintTop_toBottomOf="@+id/Lop"
         app:layout_constraintVertical_bias=".07"
         app:layout_constraintWidth_percent=".8" />
 

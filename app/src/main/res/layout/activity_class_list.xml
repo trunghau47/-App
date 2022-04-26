@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/idClass"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/categories_car_background">
+
+        <TextView
+            android:id="@+id/txtClassName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Tên lớp học"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/idGV"
+            android:layout_width="172dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/txtClassName"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="182dp"
+            android:layout_marginBottom="19dp"
+            android:padding="15dp"
+            android:text="Giảng viên"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnClassDetails"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:background="#00000000"
+            android:padding="20dp"></Button>
+    </RelativeLayout>
+
+</LinearLayout>
