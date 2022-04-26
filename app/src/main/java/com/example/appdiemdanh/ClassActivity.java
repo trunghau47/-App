@@ -66,15 +66,15 @@ public class ClassActivity extends AppCompatActivity {
         });
         bottomNavigationView.setBackground(null);
         //tao array cac thong tin
-        myDB = new DBHelper(ClassActivity.this);
-        class_ID = new ArrayList<>();
-        class_Name = new ArrayList<>();
-        idGV = new ArrayList<>();
-        displayData();
-
-        classAdapter = new ClassAdapter(ClassActivity.this,class_ID,class_Name,idGV);
-        //frameLayout.setAdapter();
-
+//        myDB = new DBHelper(ClassActivity.this);
+//        class_ID = new ArrayList<>();
+//        class_Name = new ArrayList<>();
+//        idGV = new ArrayList<>();
+//        displayData();
+//
+//        classAdapter = new ClassAdapter(ClassActivity.this,class_ID,class_Name,idGV);
+//        //frameLayout.setAdapter();
+//
 
 
         //Vào Thông Tin Lớp Học
